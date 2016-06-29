@@ -3,8 +3,7 @@ body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #979797;
-
+    color: #fdfdfd;
     background: #fdfdfd;
 }
 
@@ -21,13 +20,21 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
 }
 
+img::selection {
+    background: 0 0;
+}
+
+img::-moz-selection {
+    background: 0 0;
+}
+
 p {
     margin: 0 0 25px;
     font-size: 18px;
     line-height: 1.5;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     p {
         margin: 0 0 35px;
         font-size: 20px;
@@ -35,13 +42,16 @@ p {
     }
 }
 
-a {
-    color: #e74c3c;
+.top20 {
+    margin-top: 20px;
 }
 
-a:hover, a:focus {
-    text-decoration: none;
-    color: #c0392b;
+.top30 {
+    margin-top: 30px;
+}
+
+.top100 {
+    margin-top: 100px;
 }
 
 .light {
@@ -60,12 +70,14 @@ a:hover, a:focus {
     font-weight: 800;
 }
 
-.navbar-brand:focus {
-    outline: 0;
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a {
+    color: #fdfdfd;
 }
 
-.navbar-custom a {
-    color: #fff;
+.navbar-default .navbar-brand:hover {
+    color: darkgray;
+    outline: 0;
 }
 
 .navbar-toggle {
@@ -78,22 +90,22 @@ a:hover, a:focus {
     outline: 0;
 }
 
-.navbar-custom a {
-    color: #fff;
-}
-
+#toggleBtn:hover,
+#toggleBtn:focus,
+#toggleBtn:active,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: rgba(255,255,255,.2);
+    background-color: lightgray;
+    color: black;
 }
 
-@media(min-width:767px) {
+@media (min-width: 767px) {
     .navbar {
         padding: 20px 0;
         border-bottom: 0;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         background: 0 0;
         box-shadow: none;
     }
@@ -103,8 +115,8 @@ a:hover, a:focus {
         background-color: #000;
     }
 
-    .navbar-custom.top-nav-collapse {
-        border-bottom: 1px solid rgba(255,255,255,.3);
+    .navbar-custom .top-nav-collapse {
+        border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
 }
 
@@ -114,7 +126,6 @@ a:hover, a:focus {
     height: auto;
     padding: 100px 0;
     text-align: center;
-    color: #fff;
     background: url(../images/homeBackground.jpg) no-repeat center fixed;
     background-size: cover;
 }
@@ -122,4 +133,19 @@ a:hover, a:focus {
 .intro-body {
     display: table-cell;
     vertical-align: middle;
+}
+
+.brand-heading {
+    font-size: 50px;
+}
+
+.brand-image {
+    width: 20%;
+    height: auto;
+    margin: 5% 0 2% 0;
+
+}
+
+.intro-text {
+    font-size: 40px;
 }
