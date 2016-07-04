@@ -28,10 +28,13 @@
         <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="collapse-navbar-ref">
             <ul class="nav navbar-nav">
                 <li class="hidden active">
-                    <a href="#">Projects</a>
+                    <a>Projects</a>
                 </li>
-                <li class="">
-                    <a href="#">Projects</a>
+                <li class="clickProjectLink">
+                    <a>Projects</a>
+                </li>
+                <li class="clickSkillSetLink">
+                    <a>Skill Set</a>
                 </li>
                 <li class="">
                     <a href="#">About Me</a>
@@ -56,8 +59,8 @@
                             <strong>- EST. 2008</strong>
                         </small>
                     </p>
-                    <div class="page-scroll">
-                        <a href="#projects" class="btn btn-circle">
+                    <div class="clickProjectLink">
+                        <a class="btn btn-circle btn-intro">
                             <i class="fa fa-chevron-down animated"></i>
                         </a>
                     </div>
@@ -67,14 +70,13 @@
     </div>
 </section>
 <section id="projects" class="container project-section">
-    <div class="container top40">
+    <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
-                <h2 class="project-heading">Projects</h2>
-                <p class="project-text">Professional Work Experience</p>
+            <div class="col-xs-12 text-center">
+                <p class="text-left project-text">Professional Work Experience</p>
             </div>
         </div>
-        <div class="row">
+        <div class="project-row row">
             <div class="col-xs-4 col-sm-4 project-item">
                 <a class="project-link" data-toggle="modal" data-target="#uptakeModal">
                     <div class="caption">
@@ -82,7 +84,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/uptake.png" class="img-responsive" alt="Uptake">
+                    <img src="../images/uptake.png" class="img-responsive project-image" alt="Uptake">
                 </a>
                 <div id="uptakeModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -176,7 +178,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/wsu.png" class="img-responsive" alt="Wayne State University">
+                    <img src="../images/wsu.png" class="img-responsive project-image" alt="Wayne State University">
                 </a>
                 <div id="wsuModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -257,48 +259,124 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/infosys.png" class="img-responsive" alt="Uptake">
+                    <img src="../images/infosys.png" class="img-responsive project-image" alt="Uptake">
+                </a>
+            </div>
+        </div>
+        <div class="project-row row">
+            <div class="col-xs-4 col-sm-4 project-item">
+                <a href="" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="../images/RCBC.png" class="img-responsive project-image" alt="Uptake">
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 project-item">
+                <a href="" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="../images/chinaBank.png" class="img-responsive project-image" alt="Uptake">
+                </a>
+            </div>
+            <div class="col-xs-4 col-sm-4 project-item">
+                <a href="" class="project-link" data-toggle="modal">
+                    <div class="caption">
+                        <div class="caption-content">
+                            <i class="fa fa-search-plus fa-3x"></i>
+                        </div>
+                    </div>
+                    <img src="../images/citySavingsBank.png" class="img-responsive project-image" alt="Uptake">
                 </a>
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="../images/RCBC.png" class="img-responsive" alt="Uptake">
-                </a>
-            </div>
-            <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="../images/chinaBank.png" class="img-responsive" alt="Uptake">
-                </a>
-            </div>
-            <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
-                    <div class="caption">
-                        <div class="caption-content">
-                            <i class="fa fa-search-plus fa-3x"></i>
-                        </div>
-                    </div>
-                    <img src="../images/citySavingsBank.png" class="img-responsive" alt="Uptake">
-                </a>
+            <div class="text-center col-xs-12">
+                <div class="clickSkillSetLink">
+                    <a class="btn btn-circle btn-projects">
+                        <i class="fa fa-chevron-down animated"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<section id="skillSet" class="container skill-set-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 text-center">
+                <p class="text-left skill-set-text">Skill Set</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-sm-4 text-center">
+                <canvas width="300" height="300" data-progress-bar-color="#F35163" id="frontEndBarCanvas"
+                        data-text="Web Development" data-perc="85"></canvas>
+            </div>
+            <div class="col-xs-4 col-sm-4 text-center">
+                <canvas width="300" height="300" data-progress-bar-color="#7081F3" id="backEndBarCanvas"
+                        data-text="Backend" data-perc="80"></canvas>
+            </div>
+            <div class="col-xs-4 col-sm-4 text-center">
+                <canvas width="300" height="300" data-progress-bar-color="#6F5FA0" id="someEndBarCanvas"
+                        data-text="NoSQL DBs" data-perc="70"></canvas>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6">
+                <ul class="bean-skillset">
+                    <li class="skill-bar" style="width:85%; background-color:#F3C128">
+                        <span>ANGULARJS</span>
+                        <span class="skill-percent">85%</span>
+                    </li>
+                    <li class="skill-bar" style="width:80%; background-color:#FF5353">
+                        <span>JAVASCRIPT</span>
+                        <span class="skill-percent">80%</span>
+                    </li>
+                    <li class="skill-bar" style="width:85%; background-color:#69f3c4">
+                        <span>HTML5/CSS3</span>
+                        <span class="skill-percent">85%</span>
+                    </li>
+                    <li class="skill-bar" style="width:70%; background-color:#1CDCFF">
+                        <span>JQUERY</span>
+                        <span class="skill-percent">70%</span>
+                    </li>
+                    <li class="skill-bar" style="width:85%; background-color:#C799FF">
+                        <span>JAVA</span>
+                        <span class="skill-percent">85%</span>
+                    </li>
+                    <li class="skill-bar" style="width:75%; background-color:#7CD14E">
+                        <span>AKKA</span>
+                        <span class="skill-percent">75%</span>
+                    </li>
+                    <li class="skill-bar" style="width:80%; background-color:#F3C128">
+                        <span>ELASTICSEARCH</span>
+                        <span class="skill-percent">80%</span>
+                    </li>
+                    <li class="skill-bar" style="width:70%; background-color:#FF5353">
+                        <span>PL/SQL</span>
+                        <span class="skill-percent">70%</span>
+                    </li>
+                    <li class="skill-bar" style="width:50%; background-color:#1CDCFF">
+                        <span>ANDROID DEVELOPMENT</span>
+                        <span class="skill-percent">50%</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.6.0/dist/progressbar.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
+<script src="../javascripts/script.js"></script>
 </body>
 </html>

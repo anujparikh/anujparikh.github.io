@@ -4,7 +4,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: #fdfdfd;
-    background: #fdfdfd;
+    background: #ffffff;
 }
 
 html {
@@ -46,8 +46,8 @@ p {
     margin-top: 20px;
 }
 
-.top40 {
-    margin-top: 40px;
+.top50 {
+    margin-top: 50px;
 }
 
 .top100 {
@@ -66,17 +66,25 @@ p {
     background: 0 0;
 }
 
+.navbar-up {
+    background-color: black;
+    top: -50px;
+}
+
 .navbar-brand {
     font-weight: 800;
 }
 
+.navbar-brand:active {
+    color: #fdfdfd;
+}
+
 .navbar-default .navbar-brand,
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav > li > a {
     color: #fdfdfd;
 }
 
 .navbar-default .navbar-brand:hover {
-    color: darkgray;
     outline: 0;
 }
 
@@ -115,7 +123,14 @@ p {
     }
 
     .navbar-up {
-
+        border-bottom: 0;
+        letter-spacing: 2px;
+        background: 0 0;
+        box-shadow: none;
+        transition: top 0.2s ease-in-out;
+        -moz-transition: top 0.2s ease-in-out;
+        -webkit-transition: top 0.2s ease-in-out;
+        top: -50px;
     }
 
     .top-nav-collapse {
@@ -126,24 +141,6 @@ p {
     .navbar-custom .top-nav-collapse {
         border-bottom: 1px solid rgba(255, 255, 255, .3);
     }
-}
-
-.page-scroll .btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.page-scroll .btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
 }
 
 .intro {
@@ -161,7 +158,7 @@ p {
     vertical-align: middle;
 }
 
-.brand-heading, .project-heading {
+.brand-heading {
     font-size: 50px;
 }
 
@@ -172,9 +169,18 @@ p {
 
 }
 
-.intro-text, .project-text {
+.intro-text {
     font-size: 40px;
     letter-spacing: 4px;
+}
+
+.project-text {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-right: 90px;
+    border-bottom: 3px solid black;
+    margin-bottom: 80px;
 }
 
 .btn-circle {
@@ -182,27 +188,43 @@ p {
     height: 80px;
     margin-top: 15px;
     padding: 7px 16px;
-    border: 2px solid #fff;
     border-radius: 40px;
     font-size: 40px;
-    color: #fff;
     background: 0 0;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
 
-.btn-circle:hover,
-.btn-circle:focus {
+.btn-intro {
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.btn-intro:hover,
+.btn-intro:focus {
     outline: 0;
     color: #fff;
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, .1);
+}
+
+.btn-projects {
+    margin-top: 40px;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-projects:hover,
+.btn-projects:focus {
+    outline: 0;
+    color: black;
+    background: rgba(0, 0, 0, 0.18);
 }
 
 .project-section {
     width: 100%;
-    padding: 90px 0 50px 0;
-    background: url(../images/projectBackground.png) no-repeat center fixed;
+    padding: 50px 0 50px 0;
+    background: url(../images/projectBackground.jpg) no-repeat center fixed;
     background-size: cover;
     color: rgba(0, 0, 0, 0.72);
     font-family: 'Work Sans', sans-serif;
@@ -218,7 +240,18 @@ p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 350px;
+    box-shadow: 8px 8px 5px #888888;
+    border-radius: 10px;
+}
+
+#projects .project-row {
+    margin-right: 90px;
+    margin-bottom: 15px;
+}
+
+.project-image {
+    border-radius: 10px;
 }
 
 #projects .project-item .project-link .caption {
@@ -226,7 +259,7 @@ p {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(255,255,255,.6);
+    background: rgba(255, 255, 255, .6);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -234,6 +267,8 @@ p {
 
 #projects .project-item .project-link .caption:hover {
     opacity: 1;
+    box-shadow: 8px 8px 5px #151515;
+    border-radius: 10px;
 }
 
 #projects .project-item .project-link .caption .caption-content {
@@ -293,5 +328,63 @@ p {
     text-decoration: underline;
     margin-bottom: 10px;
     margin-top: 15px;
+}
+
+.skill-set-section {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.skill-set-text {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-right: 90px;
+    border-bottom: 3px solid black;
+    margin-bottom: 15px;
+}
+
+canvas {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+}
+
+.bean-skills {
+    width: 50%;
+    margin: 0 auto;
+    padding:0;
+}
+
+.bean-skills p {
+    margin-bottom: 20px;
+}
+
+ul.bean-skillset {
+    float: left;
+    width: 100%;
+}
+
+.skill-percent {
+    float: right;
+}
+
+li.skill-bar {
+    background-color: #7BC673;
+    color: #FFF;
+    font: bold 12px/23px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 3px;
+    padding: 2px 8px;
+    width: 300px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
