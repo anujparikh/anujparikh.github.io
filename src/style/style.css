@@ -336,6 +336,7 @@ p {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
+    background-color: rgba(211, 211, 211, 0.18);
 }
 
 .skill-set-text {
@@ -376,8 +377,8 @@ ul.bean-skillset {
 li.skill-bar {
     background-color: #7BC673;
     color: #FFF;
-    font: bold 12px/23px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-    margin-bottom: 3px;
+    font: 12px/23px "Open Sans", Arial, Helvetica, Geneva, sans-serif;
+    margin-bottom: 4px;
     padding: 2px 8px;
     width: 300px;
     -webkit-border-radius: 3px;
@@ -386,5 +387,9 @@ li.skill-bar {
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
     -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    list-style-type: none;
 }
 
+.skill-set-details {
+    margin-right: 50px;
+}

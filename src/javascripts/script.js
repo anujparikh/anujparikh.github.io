@@ -89,8 +89,8 @@
             ctx.lineWidth = lineWidth;
             ctx.arc(cHeight/2, cWidth/2, cWidth/3, 0 - 90*Math.PI/180, radians - 90*Math.PI/180, false);
             ctx.stroke();
-            ctx.fillStyle = 'black';
-            ctx.font = '20px Arial';
+            ctx.fillStyle = '#A2A29C';
+            ctx.font = "bold 15px 'Open Sans', sans-serif";
             var outputTextPerc = Math.floor(degrees/360*100)+'%';
             var outputTextPercWidth = ctx.measureText(outputTextPerc).width;
             var outputTextDefinitionWidth = ctx.measureText(definition).width;
@@ -100,4 +100,4 @@
 
         degreesCall = setInterval(getDegrees, 10/(degrees - endDegrees));
     }
-})(jQuery);
+}(jQuery));
