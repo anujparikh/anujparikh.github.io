@@ -55,6 +55,12 @@
         }, 1000);
     });
 
+    $('.clickAboutMeLink').click(function () {
+        $('html, body').animate({
+            scrollTop: $("#aboutMe").offset().top
+        }, 1000);
+    });
+
     function drawRadialProgressBar() {
         var canvas = document.getElementsByTagName('canvas');
 
@@ -102,8 +108,8 @@
                 ctx.lineWidth = lineWidth;
                 ctx.arc(cHeight / 2, cWidth / 2, cWidth / 3, 0 - 90 * Math.PI / 180, radians - 90 * Math.PI / 180, false);
                 ctx.stroke();
-                ctx.fillStyle = '#A2A29C';
-                ctx.font = "bold 15px 'Open Sans', sans-serif";
+                ctx.fillStyle = 'black';
+                ctx.font = "bold 13px 'Open Sans', sans-serif";
                 var outputTextPerc = Math.floor(degrees / 360 * 100) + '%';
                 var outputTextPercWidth = ctx.measureText(outputTextPerc).width;
                 var outputTextDefinitionWidth = ctx.measureText(definition).width;

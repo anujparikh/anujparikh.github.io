@@ -42,16 +42,8 @@ p {
     }
 }
 
-.top20 {
-    margin-top: 20px;
-}
-
 .top50 {
     margin-top: 50px;
-}
-
-.top100 {
-    margin-top: 100px;
 }
 
 .light {
@@ -349,8 +341,8 @@ p {
 }
 
 canvas {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     display: inline-block;
     margin: auto;
 }
@@ -358,7 +350,7 @@ canvas {
 .bean-skills {
     width: 50%;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
 }
 
 .bean-skills p {
@@ -366,8 +358,16 @@ canvas {
 }
 
 ul.bean-skillset {
+    margin-top: 20px;
     float: left;
     width: 100%;
+}
+
+.tool-set {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    font-size: 17px;
 }
 
 .skill-percent {
@@ -392,4 +392,58 @@ li.skill-bar {
 
 .skill-set-details {
     margin-right: 50px;
+}
+
+.tool-text, .tech-text {
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid gray;
+}
+
+.tech-text {
+    margin-left: 28%;
+}
+
+.connect-me-bar {
+    position: fixed;
+    bottom: 3pc;
+    right: 5pc;
+    z-index: 1000;
+}
+
+.connect-me-icons {
+    list-style-type: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(187, 29, 19, 0.81);
+    border-radius: 50%;
+    padding-top: 20%;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.connect-me-icons:hover {
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.about-me-section {
+    width: 100%;
+    padding: 50px 0 50px 0;
+    background: url(../images/projectBackground.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0.72);
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.about-me-text {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 4px;
+    margin-right: 600px;
+    border-bottom: 3px solid black;
+    margin-bottom: 25px;
 }
