@@ -432,7 +432,7 @@ li.skill-bar {
 .about-me-section {
     width: 100%;
     padding: 50px 0 50px 0;
-    background: url(../images/projectBackground.jpg) no-repeat center fixed;
+    background: url(../images/aboutMeBackground.JPG) no-repeat center fixed;
     background-size: cover;
     color: rgba(0, 0, 0, 0.72);
     font-family: 'Work Sans', sans-serif;
