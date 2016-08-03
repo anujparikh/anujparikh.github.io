@@ -412,20 +412,29 @@ li.skill-bar {
     z-index: 1000;
 }
 
+.connect-me-li {
+    list-style-type: none;
+}
+
 .connect-me-icons {
     list-style-type: none;
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: rgba(63, 63, 63, 0.67);
+    background-color: rgba(255, 255, 255, 0.67);
     padding-top: 20%;
     color: black;
     margin-bottom: 5%;
 }
 
-.connect-me-icons:hover {
+.connect-me-icons:hover,
+.connect-me-icons:focus,
+.connect-me-icons:active {
     transition: all ease .5s;
     cursor: pointer;
+    transform: rotateZ(360deg);
+    text-decoration: none;
+    color: black;
 }
 
 .about-me-section {

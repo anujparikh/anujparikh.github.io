@@ -11,7 +11,7 @@
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,800' rel='stylesheet' type="text/css">
-    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <link rel="stylesheet" type="text/css" href="src/style/style.css">
 </head>
 <body>
 <nav class="navbar navbar-default navbar-fixed-top navbar-custom" role="navigation">
@@ -48,14 +48,14 @@
 </nav>
 <div class="connect-me-bar text-center">
     <ul>
-        <li class="connect-me-icons"><i class="fa fa-linkedin fa-2x"
-                                                               aria-hidden="true"></i></li>
-        <li class="connect-me-icons"><i class="fa fa-github fa-2x" aria-hidden="true"></i>
+        <li class="connect-me-li"><a target="_blank" href="https://www.linkedin.com/in/parikhanuj" class="connect-me-icons fa fa-linkedin fa-2x"
+                                        aria-hidden="true"></a></li>
+        <li class="connect-me-li"><a target="_blank" href="https://github.com/anujparikh" class="connect-me-icons fa fa-github fa-2x" aria-hidden="true"></a>
         </li>
-        <li class="connect-me-icons"><i class="fa fa-facebook fa-2x"
-                                                               aria-hidden="true"></i></li>
-        <li class="connect-me-icons"><i class="fa fa-envelope fa-2x"
-                                                               aria-hidden="true"></i></li>
+        <li class="connect-me-li"><a target="_blank" href="https://www.facebook.com/anuj.parikh.7" class="connect-me-icons fa fa-facebook fa-2x"
+                                        aria-hidden="true"></a></li>
+        <li class="connect-me-li"><a href="mailto:anujparikh1@gmail.com" class="connect-me-icons fa fa-envelope fa-2x"
+                                        aria-hidden="true"></a></li>
     </ul>
 </div>
 <section class="intro">
@@ -63,7 +63,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <img class="brand-image" src="../images/brandImage.png" alt="Brand Image">
+                    <img class="brand-image" src="src/images/brandImage.png" alt="Brand Image">
                     <h1 class="brand-heading top20">Anuj Mukeshbhai Parikh</h1>
                     <p class="intro-text">
                         Full Stack Web Developer <br>
@@ -96,7 +96,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/uptake.png" class="img-responsive project-image" alt="Uptake">
+                    <img src="src/images/uptake.png" class="img-responsive project-image" alt="Uptake">
                 </a>
                 <div id="uptakeModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -190,7 +190,7 @@
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/wsu.png" class="img-responsive project-image" alt="Wayne State University">
+                    <img src="src/images/wsu.png" class="img-responsive project-image" alt="Wayne State University">
                 </a>
                 <div id="wsuModal" class="modal fade" role="dialog">
                     <div class="modal-dialog">
@@ -265,46 +265,328 @@
                 </div>
             </div>
             <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
+                <a href="" class="project-link" data-toggle="modal" data-target="#rcbcModal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/infosys.png" class="img-responsive project-image" alt="Uptake">
+                    <img src="src/images/RCBC.png" class="img-responsive project-image" alt="RCBC">
                 </a>
+                <div id="rcbcModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 modal-company-name">Rizal Commercial Banking
+                                        Corporation
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Pune, India
+                                    </div>
+                                    <div class="text-right col-xs-offset-4 col-sm-offset-4 col-xs-4 col-sm-4">
+                                        <a class="modal-company-link" href="https://www.rcbc.com">www.rcbc.com</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                        March 2009 - August 2012
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-body-title">About Company</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        RCBC is the financial flagship company of the Yuchengco Group of Companies
+                                        (YGC), one of the oldest and largest conglomerates in the Philippines and South
+                                        East Asia covering 60 businesses which include banking, insurance, construction,
+                                        and education. <br>
+                                        Now on its 54th year, RCBC is among the top largest private domestic banks in
+                                        terms of Assets, with 448 branches and 1,181 ATMs all over the Philippines and
+                                        is present in 24 countries through remittance offices and tie ups. <br>
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Role</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        Software Developer working for <b>Finacle</b> (Infosys' banking product)
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Technologies involved with</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <ul>
+                                            <li>Involved in entire product life cycle - starting from requirement
+                                                gathering to post live support.
+                                            </li>
+                                            <li>
+                                                Developed user interfaces and presentation layer using <b>HTML, JSP,
+                                                Servlets, JavaScript, JQuery and CSS</b>.
+                                            </li>
+                                            <li>Worked on <b>JQuery, AJAX</b> for designing highly user interactive
+                                                web pages for our product.
+                                            </li>
+                                            <li>Developed customized report as per client requirements across different
+                                                modules using PL/SQL, Stored Procedure and Complex SQL Queries.
+                                            </li>
+                                            <li>Developed new Finacle functionalities using Core Java and SQL.</li>
+                                            <li>Ported all the SQL queries and Procedures from Oracle to DB2</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="project-row row">
             <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
+                <a href="" class="project-link" data-toggle="modal" data-target="#chinabankModal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/RCBC.png" class="img-responsive project-image" alt="Uptake">
+                    <img src="src/images/chinaBank.png" class="img-responsive project-image" alt="China Bank">
                 </a>
+                <div id="chinabankModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 modal-company-name">China Banking Corporation
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Manila, Philippines
+                                    </div>
+                                    <div class="text-right col-xs-offset-4 col-sm-offset-4 col-xs-4 col-sm-4">
+                                        <a class="modal-company-link"
+                                           href="http://www.chinabank.ph/">www.chinabank.ph</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                        December 2013 - November 2014
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-body-title">About Company</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        China Banking Corporation (China Bank), is the first privately-owned commercial
+                                        bank in the Philippines, which catered initially to the needs of
+                                        Chinese-Filipino businessmen.<br>
+                                        China Bank offers a complete range of deposit, lending, international and
+                                        investment banking products and services to corporate, commercial, and retail
+                                        customers. <br>
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Role</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        Full Stack Software Developer working for <b>Finacle</b> (Infosys' banking
+                                        product)
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Technologies involved with</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <ul>
+                                            <li>Involved in developing and implementing new custom Finacle features as
+                                                per client requirements using <b>Java, Spring, Hibernate and SQL</b>.
+                                            </li>
+                                            <li>Handled entire customization module for two different product tracks
+                                                (Operations and General Ledger) during <b>User Acceptance Test (UAT)</b>
+                                                phase.
+                                            </li>
+                                            <li>
+                                                Developed user interfaces and presentation layer using <b>HTML, JSP,
+                                                Servlets, JavaScript and CSS</b>.
+                                            </li>
+                                            <li>Worked on <b>JQuery, AJAX</b> and different libraries for designing
+                                                highly user interactive web pages for our product.
+                                            </li>
+                                            <li>Developed customized report as per client requirements across different
+                                                modules using PL/SQL, Stored Procedure and Complex SQL Queries.
+                                            </li>
+                                            <li>Used <b>SVN</b> as version control system for source code and project
+                                                documents.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
+                <a href="" class="project-link" data-toggle="modal" data-target="#csbModal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/chinaBank.png" class="img-responsive project-image" alt="Uptake">
+                    <img src="src/images/citySavingsBank.png" class="img-responsive project-image" alt="Uptake">
                 </a>
+                <div id="csbModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 modal-company-name">City Savings Bank
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Cebu, Philippines
+                                    </div>
+                                    <div class="text-right col-xs-offset-4 col-sm-offset-4 col-xs-4 col-sm-4">
+                                        <a class="modal-company-link"
+                                           href="https://www.citysavingsbank.com">www.citysavingsbank.com</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                        January 2013 - November 2013
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-body-title">About Company</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        City-state Savings Bank is publicly listed thrift bank listed in the Philippines
+                                        Stock Exchange.<br>
+                                        CSB offers banking services, such as deposit products and services, cash
+                                        management, onsite/offshore ATM facilities, corporate and retail banking, and
+                                        treasury services<br>
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Role</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        Web Developer working for <b>Finacle</b> (Infosys' banking
+                                        product)
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Technologies involved with</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <ul>
+                                            <li>Worked as acting team lead and drafted design objectives, developed
+                                                architectural and system design documents
+                                            </li>
+                                            <li>Involved in server side and front-end validation using <b>JavaScript and
+                                                JQuery</b>
+                                            </li>
+                                            <li>
+                                                Developed user interfaces and presentation layer using <b>HTML, JSP,
+                                                Servlets, JavaScript and CSS</b>.
+                                            </li>
+                                            <li>Developed customized report as per client requirements across different
+                                                modules using <b>PL/SQL, Stored Procedure and Complex SQL Queries</b>.
+                                            </li>
+                                            <li><b>Unit testing</b> of the code developed as per Functional Design
+                                                Documents.
+                                            </li>
+                                            <li>Coordinated with QA testers for <b>end-to-end testing</b> and <b>post-deployment
+                                                testing</b>.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-xs-4 col-sm-4 project-item">
-                <a href="" class="project-link" data-toggle="modal">
+                <a href="" class="project-link" data-toggle="modal" data-target="#infosysModal">
                     <div class="caption">
                         <div class="caption-content">
                             <i class="fa fa-search-plus fa-3x"></i>
                         </div>
                     </div>
-                    <img src="../images/citySavingsBank.png" class="img-responsive project-image" alt="Uptake">
+                    <img src="src/images/infosys.png" class="img-responsive project-image" alt="Uptake">
                 </a>
+                <div id="infosysModal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12 modal-company-name">Infosys Limited</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4"><i class="fa fa-map-marker" aria-hidden="true"></i>
+                                        Pune, India
+                                    </div>
+                                    <div class="text-right col-xs-offset-4 col-sm-offset-4 col-xs-4 col-sm-4">
+                                        <a class="modal-company-link" href="https://www.infosys.com">www.infosys.com</a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12"><i class="fa fa-calendar" aria-hidden="true"></i>
+                                        July 2008 - November 2014
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <p class="modal-body-title">About Company</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        Infosys Limited is an Indian multinational corporation that provides business
+                                        consulting, information technology and outsourcing services. It is headquartered
+                                        in Bangalore, Karnataka. <br>
+                                        Infosys is the second-largest Indian IT services company by 2016 revenues.<br>
+                                        It is one of India's largest IT companies, with nine development centers in
+                                        India and over 30 offices worldwide.<br>
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Role</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        Started Fresher as Software Engineer, progressed till Technology Analyst before
+                                        enrolling for Master program.
+                                    </div>
+                                </div>
+                                <p class="modal-body-title">Technologies involved with</p>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-12">
+                                        <ul>
+                                            <li>As fresher, got trained for:
+                                                <ul>
+                                                    <li>HTML, JavaScript, XML</li>
+                                                    <li>SQL/PLSQL, Oracle</li>
+                                                    <li>Java Programming and Advance Java Programming</li>
+                                                    <li>J2EE</li>
+                                                    <li>Relational Database Management System (RDBMS)</li>
+                                                    <li>Analysis of Algorithms and Unix</li>
+                                                    <li>C, C++</li>
+                                                </ul>
+                                            </li>
+                                            <li>Worked on different south-east Asia Finacle projects:
+                                                <ul>
+                                                    <li>RCBC Bank</li>
+                                                    <li>Robinsons Bank</li>
+                                                    <li>City Savings Bank</li>
+                                                    <li>China Bank</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -402,7 +684,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-5 col-sm-5 text-left">NoSQL Databases:</div>
-                        <div class="col-xs-7 col-sm-7 text-left">ElasticSearch, MangoDB, Solr 4.1, Cassandra</div>
+                        <div class="col-xs-7 col-sm-7 text-left">ElasticSearch, MongoDB, Solr 4.1, Cassandra</div>
                     </div>
                     <div class="row">
                         <div class="col-xs-5 col-sm-5 text-left">Database Tools:</div>
@@ -435,12 +717,11 @@
         </div>
     </div>
 </section>
-<script src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/0.6.0/dist/progressbar.js"></script>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
         integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
         crossorigin="anonymous"></script>
-<script src="../javascripts/script.js"></script>
+<script src="src/javascripts/script.js"></script>
 </body>
 </html>
