@@ -26,20 +26,20 @@
 
     function hasScrolled() {
         var st = $(this).scrollTop();
-        console.log('st: ', st);
-        console.log('lastScrollTop: ', lastScrollTop);
 
         if (Math.abs(lastScrollTop - st) <= delta) {
             return;
         }
 
-        if (st > lastScrollTop && st > navbarHeight) {
-            $('nav').removeClass('navbar').addClass('navbar-up');
-        } else {
-            if (st + $(window).height() < $(document).height()) {
-                $('nav').removeClass('navbar-up').addClass('navbar');
+       /* Commenting auto hidding of Navbar
+           if (st > lastScrollTop && st > navbarHeight) {
+                $('nav').removeClass('navbar').addClass('navbar-up');
+            } else {
+                if (st + $(window).height() < $(document).height()) {
+                    $('nav').removeClass('navbar-up').addClass('navbar');
+                }
             }
-        }
+        */
         lastScrollTop = st;
     }
 
@@ -75,7 +75,7 @@
             var cWidth = canvas.width;
             var cHeight = canvas.height;
             var progressColor = canvas.getAttribute('data-progress-bar-color');
-            var circleColor = 'lightgray';
+            var circleColor = 'white';
             var rawPerc = canvas.getAttribute('data-perc');
             var definition = canvas.getAttribute('data-text');
             var perc = parseInt(rawPerc);

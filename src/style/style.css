@@ -97,16 +97,17 @@ p {
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li.active {
     outline: 0;
-    background-color: lightgray;
-    color: black;
+    color: white;
+    font-size: large;
+    text-decoration: underline;
 }
 
 @media (min-width: 767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 5px 0;
         border-bottom: 0;
         letter-spacing: 2px;
-        background: 0 0;
+        background: rgba(0, 0, 0, 0.42);
         box-shadow: none;
         position: fixed;
         transition: top 0.2s ease-in-out;
@@ -114,16 +115,18 @@ p {
         -webkit-transition: top 0.2s ease-in-out;
     }
 
-    .navbar-up {
-        border-bottom: 0;
-        letter-spacing: 2px;
-        background: 0 0;
-        box-shadow: none;
-        transition: top 0.2s ease-in-out;
-        -moz-transition: top 0.2s ease-in-out;
-        -webkit-transition: top 0.2s ease-in-out;
-        top: -50px;
-    }
+    /* Commenting auto-hiding of Navbar
+        .navbar-up {
+            border-bottom: 0;
+            letter-spacing: 2px;
+            background: 0 0;
+            box-shadow: none;
+            transition: top 0.2s ease-in-out;
+            -moz-transition: top 0.2s ease-in-out;
+            -webkit-transition: top 0.2s ease-in-out;
+            top: -50px;
+        }
+    */
 
     .top-nav-collapse {
         padding: 0;
@@ -170,9 +173,8 @@ p {
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 4px;
-    margin-right: 90px;
+    margin: 40px 7pc 80px auto;
     border-bottom: 3px solid black;
-    margin-bottom: 80px;
 }
 
 .btn-circle {
@@ -201,7 +203,7 @@ p {
 }
 
 .btn-projects {
-    margin-top: 40px;
+    margin-top: 20px;
     border: 2px solid black;
     color: black;
 }
@@ -328,16 +330,15 @@ p {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    background-color: rgba(211, 211, 211, 0.18);
+    background: url(../images/b.jpg) no-repeat center fixed;
 }
 
 .skill-set-text {
     font-weight: 700;
     font-size: 40px;
     letter-spacing: 4px;
-    margin-right: 90px;
     border-bottom: 3px solid black;
-    margin-bottom: 15px;
+    margin: 40px 90px 15px auto;
 }
 
 canvas {
@@ -375,8 +376,8 @@ ul.bean-skillset {
 }
 
 li.skill-bar {
-    background-color: #7BC673;
-    color: #FFF;
+    background-color: black;
+    color: black;
     font: 12px/23px "Open Sans", Arial, Helvetica, Geneva, sans-serif;
     margin-bottom: 4px;
     padding: 2px 8px;
@@ -398,7 +399,6 @@ li.skill-bar {
     font-weight: 400;
     font-size: 22px;
     letter-spacing: 4px;
-    border-bottom: 1px solid gray;
 }
 
 .tech-text {
